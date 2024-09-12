@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.galvanize.jwtclient.AlfieHubIntegrationTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-09-10T18:08:36" hostname="DESKTOP-FIV6KMF" time="1.11">
+  <properties/>
+  <testcase name="Should add a new hub" classname="com.galvanize.jwtclient.AlfieHubIntegrationTests" time="0.857"/>
+  <testcase name="Should return a hub by name" classname="com.galvanize.jwtclient.AlfieHubIntegrationTests" time="0.096"/>
+  <testcase name="Should delete a hub" classname="com.galvanize.jwtclient.AlfieHubIntegrationTests" time="0.05"/>
+  <testcase name="Should return a list of hubs" classname="com.galvanize.jwtclient.AlfieHubIntegrationTests" time="0.071"/>
+  <testcase name="Should return no content for non-existent hub" classname="com.galvanize.jwtclient.AlfieHubIntegrationTests" time="0.029"/>
+  <system-out><![CDATA[2024-09-10T14:08:30.216-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.galvanize.jwtclient.AlfieHubIntegrationTests]: AlfieHubIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-10T14:08:30.231-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.galvanize.jwtclient.JwtClientApplication for test class com.galvanize.jwtclient.AlfieHubIntegrationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2024-09-10T14:08:30.335-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] c.g.jwtclient.AlfieHubIntegrationTests   : Starting AlfieHubIntegrationTests using Java 17.0.11 with PID 17784 (started by ingai in C:\Users\ingai\IdeaProjects\alfi-admin-api)
+2024-09-10T14:08:30.335-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] c.g.jwtclient.AlfieHubIntegrationTests   : No active profile set, falling back to 1 default profile: "default"
+2024-09-10T14:08:31.084-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-10T14:08:31.199-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 2 JPA repository interfaces.
+2024-09-10T14:08:31.991-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-09-10T14:08:32.019-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-10T14:08:32.020-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-09-10T14:08:32.121-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-10T14:08:32.121-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1777 ms
+2024-09-10T14:08:32.388-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-10T14:08:32.813-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:d5ba5930-7557-4b6f-8bd5-347636d29a2f user=SA
+2024-09-10T14:08:32.817-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-10T14:08:32.934-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-10T14:08:33.086-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-09-10T14:08:33.151-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-10T14:08:33.448-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-10T14:08:34.758-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-10T14:08:34.825-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10T14:08:35.537-04:00  WARN 17784 --- [alfi-admin-api] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-10T14:08:35.555-04:00  WARN 17784 --- [alfi-admin-api] [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 242d5e1d-5a31-498e-ac76-8372b11cb65a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-10T14:08:35.786-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@716a6343, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d17b6ad, org.springframework.security.web.context.SecurityContextHolderFilter@5503e208, org.springframework.security.web.header.HeaderWriterFilter@6f9d1785, org.springframework.web.filter.CorsFilter@564b221e, org.springframework.security.web.authentication.logout.LogoutFilter@3f46fb53, com.galvanize.jwtclient.security.JwtTokenAuthenticationFilter@72e36d0f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5225f612, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d3aefd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5031786b, org.springframework.security.web.session.SessionManagementFilter@25ea3a5f, org.springframework.security.web.access.ExceptionTranslationFilter@71702d3f, org.springframework.security.web.access.intercept.AuthorizationFilter@204d101]
+2024-09-10T14:08:36.066-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 56464 (http) with context path ''
+2024-09-10T14:08:36.075-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] c.g.jwtclient.AlfieHubIntegrationTests   : Started AlfieHubIntegrationTests in 5.825 seconds (process running for 13.186)
+2024-09-10T14:08:36.495-04:00  INFO 17784 --- [alfi-admin-api] [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-10T14:08:36.495-04:00  INFO 17784 --- [alfi-admin-api] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-10T14:08:36.497-04:00  INFO 17784 --- [alfi-admin-api] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

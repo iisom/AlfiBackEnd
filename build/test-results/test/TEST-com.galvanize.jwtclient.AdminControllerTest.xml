@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.galvanize.jwtclient.AdminControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-09-10T18:08:29" hostname="DESKTOP-FIV6KMF" time="0.585">
+  <properties/>
+  <testcase name="deleteAdminRole_returnsUserWithoutAdminRole()" classname="com.galvanize.jwtclient.AdminControllerTest" time="0.288"/>
+  <testcase name="assignAdminRole_returnsUserWithAdminRole()" classname="com.galvanize.jwtclient.AdminControllerTest" time="0.294"/>
+  <system-out><![CDATA[14:08:24.448 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.galvanize.jwtclient.AdminControllerTest]: AdminControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:08:24.799 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.galvanize.jwtclient.JwtClientApplication for test class com.galvanize.jwtclient.AdminControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2024-09-10T14:08:25.585-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] c.g.jwtclient.AdminControllerTest        : Starting AdminControllerTest using Java 17.0.11 with PID 17784 (started by ingai in C:\Users\ingai\IdeaProjects\alfi-admin-api)
+2024-09-10T14:08:25.587-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] c.g.jwtclient.AdminControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2024-09-10T14:08:29.151-04:00  WARN 17784 --- [alfi-admin-api] [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9eb3d44a-f831-469d-83ea-25649b8554d3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-10T14:08:29.412-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@f48a080, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f7cd50e, org.springframework.security.web.context.SecurityContextHolderFilter@ff5d4f1, org.springframework.security.web.header.HeaderWriterFilter@3de56885, org.springframework.web.filter.CorsFilter@401ec794, org.springframework.security.web.csrf.CsrfFilter@31b6b0c7, org.springframework.security.web.authentication.logout.LogoutFilter@5d37aa0f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@48d44b46, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@74bdfa0b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@d76099a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@69a73867, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@254e9709, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@350f18a6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47f0f414, org.springframework.security.web.access.ExceptionTranslationFilter@2fb48970, org.springframework.security.web.access.intercept.AuthorizationFilter@3d53e876]
+2024-09-10T14:08:29.512-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-10T14:08:29.512-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-10T14:08:29.514-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-09-10T14:08:29.565-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] c.g.jwtclient.AdminControllerTest        : Started AdminControllerTest in 4.614 seconds (process running for 6.676)
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /api/admin/role/ADMIN/user@glab.com
+       Parameters = {_csrf=[6aInC6ArUKWbHuYq6MDjfVsphBargEw_Y4oSvQZ2qzdR7jug2JMVP5USZ5G2fIIcje3XTTgcqXef4yoSVr8l2GAUmw811lmV]}
+          Headers = [Authorization:"mockToken"]
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]}
+
+Handler:
+             Type = com.galvanize.jwtclient.AdminController
+           Method = com.galvanize.jwtclient.AdminController#removeAdminRole(HttpServletRequest, String, String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 202
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /api/admin
+       Parameters = {_csrf=[MssvQC147g01w3EHuXnvHRutoTCk0ZAjkRPFrb4BpVgkXUf1V_pNIUkbijoYokc_j1TbeSmYjFGc6akOqSehmo5iljkRZSWU]}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"46"]
+             Body = {"username": "user@glab.com", "role": "ADMIN"}
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]}
+
+Handler:
+             Type = com.galvanize.jwtclient.AdminController
+           Method = com.galvanize.jwtclient.AdminController#addAdminRole(AdminRoleRequest, HttpServletRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.galvanize.jwtclient.HubControllerTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2024-09-10T18:08:38" hostname="DESKTOP-FIV6KMF" time="0.315">
+  <properties/>
+  <testcase name="deleteHub_byId_returns202()" classname="com.galvanize.jwtclient.HubControllerTests" time="0.014"/>
+  <testcase name="getHub_withHubs_returnsHubList()" classname="com.galvanize.jwtclient.HubControllerTests" time="0.024"/>
+  <testcase name="getHub_noHubs_returnsNoContent()" classname="com.galvanize.jwtclient.HubControllerTests" time="0.02"/>
+  <testcase name="addHub_valid_returnsHub()" classname="com.galvanize.jwtclient.HubControllerTests" time="0.027"/>
+  <testcase name="updateHub_invalid_RequestReturns_UpdatedHubName()" classname="com.galvanize.jwtclient.HubControllerTests" time="0.037"/>
+  <testcase name="addHub_invalid_returnsNotFound()" classname="com.galvanize.jwtclient.HubControllerTests" time="0.03"/>
+  <testcase name="deleteHub_idDoesNotExist_returnsNotFound()" classname="com.galvanize.jwtclient.HubControllerTests" time="0.016"/>
+  <testcase name="getAllHubs_ByName()" classname="com.galvanize.jwtclient.HubControllerTests" time="0.043"/>
+  <testcase name="updateHub_valid_RequestReturns_UpdatedHubName()" classname="com.galvanize.jwtclient.HubControllerTests" time="0.057"/>
+  <system-out><![CDATA[2024-09-10T14:08:37.911-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.galvanize.jwtclient.HubControllerTests]: HubControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-10T14:08:37.930-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.galvanize.jwtclient.JwtClientApplication for test class com.galvanize.jwtclient.HubControllerTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2024-09-10T14:08:37.989-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] c.g.jwtclient.HubControllerTests         : Starting HubControllerTests using Java 17.0.11 with PID 17784 (started by ingai in C:\Users\ingai\IdeaProjects\alfi-admin-api)
+2024-09-10T14:08:37.991-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] c.g.jwtclient.HubControllerTests         : No active profile set, falling back to 1 default profile: "default"
+2024-09-10T14:08:38.351-04:00  WARN 17784 --- [alfi-admin-api] [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 954a16cb-936d-45d1-97d8-01bfbd4e7617
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-10T14:08:38.358-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@214a7560, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6878e49e, org.springframework.security.web.context.SecurityContextHolderFilter@175957f9, org.springframework.security.web.header.HeaderWriterFilter@6b021959, org.springframework.web.filter.CorsFilter@6dd01bfb, org.springframework.security.web.csrf.CsrfFilter@492a54b4, org.springframework.security.web.authentication.logout.LogoutFilter@7f6a0c29, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@210e7a5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@470bef04, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@65289e33, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2d34a88a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ccd3e52, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c38f10b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@173b1683, org.springframework.security.web.access.ExceptionTranslationFilter@4a5f435b, org.springframework.security.web.access.intercept.AuthorizationFilter@1ccab629]
+2024-09-10T14:08:38.368-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-10T14:08:38.368-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-10T14:08:38.370-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-09-10T14:08:38.377-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] c.g.jwtclient.HubControllerTests         : Started HubControllerTests in 0.436 seconds (process running for 15.487)
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/admin/hubs
+       Parameters = {_csrf=[M1mce4eI-MULlzem6gQoB7v79iEC26M3KzpzEtcokSzB69QxUDqvGuO5z6EmoVWV0ikcMo3N2xgw6ZMaSgxDIeIY8hv23rZT]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_User]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_User]]]}
+
+Handler:
+             Type = com.galvanize.jwtclient.HubController
+           Method = com.galvanize.jwtclient.HubController#getHub()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"hubs":[{"name":"Atlanta","picture":"https://example.com/image.png"},{"name":"New York","picture":"https://example.com/image2.png"}],"empty":false}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/admin/hubs
+       Parameters = {_csrf=[0X9m_ECq8UrcoUkMy4ezw9GyxkZg8acVI3t6iiyE4BLGTWnatBtXyXjOlC_xmH04_qqH8emF635QkJQ4QE8bvBmyhCLxfgy_]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]}
+
+Handler:
+             Type = com.galvanize.jwtclient.HubController
+           Method = com.galvanize.jwtclient.HubController#getHub()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 204
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/admin/hubs
+       Parameters = {_csrf=[8eWDjihJgi47sCpNj1jIfKMQ3eUeUm4QJBrbok7TbNXcYZYzx9Ky7R4rsx8W1h5-tnX8TcUk8NwsNw89QC7tln2xVbHrA_NS]}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"56"]
+             Body = {"name":"Atlanta","picture":"https://example.com/image"}
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]}
+
+Handler:
+             Type = com.galvanize.jwtclient.HubController
+           Method = com.galvanize.jwtclient.HubController#addHub(Hub)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"name":"Atlanta","picture":"https://example.com/image"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PATCH
+      Request URI = /api/admin/hubs/Florida
+       Parameters = {_csrf=[2xyUuo57K1j0MKQbW_R3gv6iGXm0Zt5zDorN0IPFi-nnemon6niig7pCTW_ZVJYiPtlD5pubNBiDU7heOrir6bD3v43SHFIV]}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"57"]
+             Body = {"name":"Atlanta", "picture":"https://example.com/image"}
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]}
+
+Handler:
+             Type = com.galvanize.jwtclient.HubController
+           Method = com.galvanize.jwtclient.HubController#updateHub(String, Hub)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = com.galvanize.jwtclient.HubNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"text/plain;charset=UTF-8", Content-Length:"13", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = text/plain;charset=UTF-8
+             Body = Hub not found
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/admin/hubs
+       Parameters = {_csrf=[pV-sdlC2-9_QQk81E_U30UmazqpLUfONGLMhBxqr5own7HW2kzmdQGXXz7r9IXkFKtgDsHGo48t_MMOgL4MZZn-ZgrRGjxPU]}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"55"]
+             Body = {"name":"Dallas","picture":"https://example.com/image"}
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]}
+
+Handler:
+             Type = com.galvanize.jwtclient.HubController
+           Method = com.galvanize.jwtclient.HubController#addHub(Hub)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /api/admin/hubs/999
+       Parameters = {_csrf=[fD3bU2Of18haadiiQos55_8rrP-7C5oQq5Yh6yUXB_rtBtJ6RQ7uYFqs4613Wu_GI6YN084ZgcaKb6s9z6QQ30AmZpjUY-sf]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]}
+
+Handler:
+             Type = com.galvanize.jwtclient.HubController
+           Method = com.galvanize.jwtclient.HubController#deleteHub(long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = com.galvanize.jwtclient.HubNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"text/plain;charset=UTF-8", Content-Length:"27", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = text/plain;charset=UTF-8
+             Body = That is not a valid Hub ID.
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/admin/hubs/Atlanta
+       Parameters = {_csrf=[RnQCHLlktc3sF6yOxssmLE7J5UHLUcWuC_pfKDLvNw3SY6DidBE6fopSh_zBdsm-9uYSFXj6yHn-NPyDPMptEAWJDzm0U5TQ]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]}
+
+Handler:
+             Type = com.galvanize.jwtclient.HubController
+           Method = com.galvanize.jwtclient.HubController#getHub(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"name":"Atlanta","picture":"https://example.com/image"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PATCH
+      Request URI = /api/admin/hubs/Atlanta
+       Parameters = {_csrf=[BRw8sTJb0Ib4bzAQ8_6KHJ551X01kkihAlDgnaiMMfgZVa-ZZygFhwI-6bXVXgYjw9O-JKlO-EQHq3iMNjKB_MnvBs4qYJ78]}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"18"]
+             Body = {"name":"Atlanta"}
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]}
+
+Handler:
+             Type = com.galvanize.jwtclient.HubController
+           Method = com.galvanize.jwtclient.HubController#updateHub(String, Hub)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = application/json
+             Body = {"name":"Dallas","picture":"https://example.com/image"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

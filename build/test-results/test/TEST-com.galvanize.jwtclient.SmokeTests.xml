@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.galvanize.jwtclient.SmokeTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-09-10T18:08:39" hostname="DESKTOP-FIV6KMF" time="0.084">
+  <properties/>
+  <testcase name="Ping should public and return Pong" classname="com.galvanize.jwtclient.SmokeTests" time="0.026"/>
+  <testcase name="Server Should Start" classname="com.galvanize.jwtclient.SmokeTests" time="0.006"/>
+  <testcase name="Id Check should require a user" classname="com.galvanize.jwtclient.SmokeTests" time="0.019"/>
+  <testcase name="Id Check should reply with user information" classname="com.galvanize.jwtclient.SmokeTests" time="0.026"/>
+  <system-out><![CDATA[2024-09-10T14:08:39.120-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.galvanize.jwtclient.SmokeTests]: SmokeTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-10T14:08:39.128-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.galvanize.jwtclient.JwtClientApplication for test class com.galvanize.jwtclient.SmokeTests
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.galvanize.jwtclient.identity.IdentityServiceTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-09-10T18:08:39" hostname="DESKTOP-FIV6KMF" time="0.295">
+  <properties/>
+  <testcase name="testAddRollToUser_userNotFound_throwsUserNotFoundException()" classname="com.galvanize.jwtclient.identity.IdentityServiceTests" time="0.269"/>
+  <testcase name="testGetRoles()" classname="com.galvanize.jwtclient.identity.IdentityServiceTests" time="0.004"/>
+  <testcase name="testRemoveUserFromRole()" classname="com.galvanize.jwtclient.identity.IdentityServiceTests" time="0.004"/>
+  <testcase name="testRemoveRoleFromUser_userNotFound_throwsUserNotFoundException()" classname="com.galvanize.jwtclient.identity.IdentityServiceTests" time="0.005"/>
+  <testcase name="testRemoveUser()" classname="com.galvanize.jwtclient.identity.IdentityServiceTests" time="0.004"/>
+  <testcase name="testAddRollToUser()" classname="com.galvanize.jwtclient.identity.IdentityServiceTests" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - CategoriesControllerTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>CategoriesControllerTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.galvanize.jwtclient.html">com.galvanize.jwtclient</a> &gt; CategoriesControllerTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.233s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">addCategory_returnsCategory()</td>
+<td class="success">0.019s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">deleteCategory_doesnotExists_returnsNotFound()</td>
+<td class="success">0.021s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">deleteCategory_exists_returns202()</td>
+<td class="success">0.011s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getCategories_noParams_returnsAllCategories()</td>
+<td class="success">0.029s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">updateCategory_invalid_RequestReturns_throwsException()</td>
+<td class="success">0.030s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">updateCategory_valid_Returns_UpdatedCategoryName()</td>
+<td class="success">0.123s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2024-09-10T14:08:37.198-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.galvanize.jwtclient.CategoriesControllerTests]: CategoriesControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-10T14:08:37.215-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.galvanize.jwtclient.JwtClientApplication for test class com.galvanize.jwtclient.CategoriesControllerTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2024-09-10T14:08:37.264-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] c.g.jwtclient.CategoriesControllerTests  : Starting CategoriesControllerTests using Java 17.0.11 with PID 17784 (started by ingai in C:\Users\ingai\IdeaProjects\alfi-admin-api)
+2024-09-10T14:08:37.265-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] c.g.jwtclient.CategoriesControllerTests  : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-09-10T14:08:37.626-04:00  WARN 17784 --- [alfi-admin-api] [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 86e71278-d7a0-4c8b-b2e1-43f224db4f0e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-10T14:08:37.635-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@634de03e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ca29f17, org.springframework.security.web.context.SecurityContextHolderFilter@1f79536b, org.springframework.security.web.header.HeaderWriterFilter@3095a6e0, org.springframework.web.filter.CorsFilter@66f965a, org.springframework.security.web.csrf.CsrfFilter@4b56971a, org.springframework.security.web.authentication.logout.LogoutFilter@71b6886, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@11b975cc, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@75ad8ca8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@18ca65ea, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4d3a7025, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6068e9d9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@681285ec, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@140a2add, org.springframework.security.web.access.ExceptionTranslationFilter@1263422a, org.springframework.security.web.access.intercept.AuthorizationFilter@620bab73]
+2024-09-10T14:08:37.644-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-10T14:08:37.644-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-10T14:08:37.645-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-09-10T14:08:37.652-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] c.g.jwtclient.CategoriesControllerTests  : Started CategoriesControllerTests in 0.43 seconds (process running for 14.763)
+
+MockHttpServletRequest:
+      HTTP Method = PATCH
+      Request URI = /api/admin/categories/Yard
+       Parameters = {_csrf=[llVjMcDvMi6Nb3NgnhBXOmxppnOwzXULUXcNYUQaSfErQdv2pWEBAaTYBkygXkMEqD1jDF8Ii0rSq00mZE9sWSUrL8VPIuuU]}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Content-Length:&quot;15&quot;]
+             Body = {&quot;name&quot;:&quot;Yard&quot;}
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]}
+
+Handler:
+             Type = com.galvanize.jwtclient.CategoriesController
+           Method = com.galvanize.jwtclient.CategoriesController#updateCategory(String, Cat)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Content-Type:&quot;application/json&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;0&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = application/json
+             Body = {&quot;id&quot;:1236,&quot;name&quot;:&quot;Outdoors&quot;}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PATCH
+      Request URI = /api/admin/categories/Food
+       Parameters = {_csrf=[lRrG2-jsUwQ1MItmU5bme7PfMWdDG2goQfPI4gf5ALxeI1VepCOkuN2NMGUYB7NWYbvSQoLpHAZxLFoFJcT_0zXMM4poQjc7]}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Content-Length:&quot;22&quot;]
+             Body = {&quot;name&quot;:&quot;Electronics&quot;}
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]}
+
+Handler:
+             Type = com.galvanize.jwtclient.CategoriesController
+           Method = com.galvanize.jwtclient.CategoriesController#updateCategory(String, Cat)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = com.galvanize.jwtclient.CatNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Content-Type:&quot;text/plain;charset=UTF-8&quot;, Content-Length:&quot;18&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;0&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = text/plain;charset=UTF-8
+             Body = Category not found
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/admin/categories
+       Parameters = {_csrf=[ck_8tczQ9jQh0non39A8DV4d3Jm-E-LdYJkfbw8gVZI51zE1E37I0P2xl1YM6h9Dvf0Ibjh58aCOJofwBvopXDtFN_QN4AMF]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_User]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_User]]]}
+
+Handler:
+             Type = com.galvanize.jwtclient.CategoriesController
+           Method = com.galvanize.jwtclient.CategoriesController#getCategory()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Content-Type:&quot;application/json&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;0&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = application/json
+             Body = {&quot;categories&quot;:[{&quot;id&quot;:1234,&quot;name&quot;:&quot;Electronics&quot;},{&quot;id&quot;:1235,&quot;name&quot;:&quot;Kitchen&quot;},{&quot;id&quot;:1236,&quot;name&quot;:&quot;Yard&quot;}],&quot;empty&quot;:false}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /api/admin/categories/NOTHING
+       Parameters = {_csrf=[A1r47qF0HZacM3sw7wAyH4zHs5zBb8V2boLQ-zIpJJr7hPG_M2nA18RGKKaxB0tT3C0GJr6hnqXwWKdbCLboywMQFfiY4Mjd]}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]}
+
+Handler:
+             Type = com.galvanize.jwtclient.CategoriesController
+           Method = com.galvanize.jwtclient.CategoriesController#deleteCategory(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.web.server.ResponseStatusException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = Category not found
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;0&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/admin/categories
+       Parameters = {_csrf=[wjNH7bkddweLCY1a8NhP5VaDZs9DQmKYyj9lI8GxVYOG1Qjn-wQk3I4pRGGmP-w-w_V7hzS1S_d0IVK18gkBRqPTNOKy4mzR]}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Content-Length:&quot;31&quot;]
+             Body = {&quot;id&quot;:1237,&quot;name&quot;:&quot;Appliances&quot;}
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_Admin]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_Admin]]]}
+
+Handler:
+             Type = com.galvanize.jwtclient.CategoriesController
+           Method = com.galvanize.jwtclient.CategoriesController#addCategory(Cat)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Content-Type:&quot;application/json&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;0&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = application/json
+             Body = {&quot;id&quot;:1237,&quot;name&quot;:&quot;Appliances&quot;}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at Sep 10, 2024, 2:08:39 PM</p>
+</div>
+</div>
+</body>
+</html>

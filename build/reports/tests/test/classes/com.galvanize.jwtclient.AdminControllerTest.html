@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - AdminControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>AdminControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.galvanize.jwtclient.html">com.galvanize.jwtclient</a> &gt; AdminControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.582s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">assignAdminRole_returnsUserWithAdminRole()</td>
+<td class="success">0.294s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">deleteAdminRole_returnsUserWithoutAdminRole()</td>
+<td class="success">0.288s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>14:08:24.448 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.galvanize.jwtclient.AdminControllerTest]: AdminControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:08:24.799 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.galvanize.jwtclient.JwtClientApplication for test class com.galvanize.jwtclient.AdminControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2024-09-10T14:08:25.585-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] c.g.jwtclient.AdminControllerTest        : Starting AdminControllerTest using Java 17.0.11 with PID 17784 (started by ingai in C:\Users\ingai\IdeaProjects\alfi-admin-api)
+2024-09-10T14:08:25.587-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] c.g.jwtclient.AdminControllerTest        : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-09-10T14:08:29.151-04:00  WARN 17784 --- [alfi-admin-api] [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9eb3d44a-f831-469d-83ea-25649b8554d3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-10T14:08:29.412-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@f48a080, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f7cd50e, org.springframework.security.web.context.SecurityContextHolderFilter@ff5d4f1, org.springframework.security.web.header.HeaderWriterFilter@3de56885, org.springframework.web.filter.CorsFilter@401ec794, org.springframework.security.web.csrf.CsrfFilter@31b6b0c7, org.springframework.security.web.authentication.logout.LogoutFilter@5d37aa0f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@48d44b46, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@74bdfa0b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@d76099a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@69a73867, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@254e9709, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@350f18a6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47f0f414, org.springframework.security.web.access.ExceptionTranslationFilter@2fb48970, org.springframework.security.web.access.intercept.AuthorizationFilter@3d53e876]
+2024-09-10T14:08:29.512-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-10T14:08:29.512-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-10T14:08:29.514-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-09-10T14:08:29.565-04:00  INFO 17784 --- [alfi-admin-api] [    Test worker] c.g.jwtclient.AdminControllerTest        : Started AdminControllerTest in 4.614 seconds (process running for 6.676)
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /api/admin/role/ADMIN/user@glab.com
+       Parameters = {_csrf=[6aInC6ArUKWbHuYq6MDjfVsphBargEw_Y4oSvQZ2qzdR7jug2JMVP5USZ5G2fIIcje3XTTgcqXef4yoSVr8l2GAUmw811lmV]}
+          Headers = [Authorization:&quot;mockToken&quot;]
+             Body = null
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]}
+
+Handler:
+             Type = com.galvanize.jwtclient.AdminController
+           Method = com.galvanize.jwtclient.AdminController#removeAdminRole(HttpServletRequest, String, String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 202
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;0&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /api/admin
+       Parameters = {_csrf=[MssvQC147g01w3EHuXnvHRutoTCk0ZAjkRPFrb4BpVgkXUf1V_pNIUkbijoYokc_j1TbeSmYjFGc6akOqSehmo5iljkRZSWU]}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Content-Length:&quot;46&quot;]
+             Body = {&quot;username&quot;: &quot;user@glab.com&quot;, &quot;role&quot;: &quot;ADMIN&quot;}
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]}
+
+Handler:
+             Type = com.galvanize.jwtclient.AdminController
+           Method = com.galvanize.jwtclient.AdminController#addAdminRole(AdminRoleRequest, HttpServletRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;0&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at Sep 10, 2024, 2:08:39 PM</p>
+</div>
+</div>
+</body>
+</html>

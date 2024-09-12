@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.galvanize.jwtclient.HubServiceTests" tests="8" skipped="0" failures="0" errors="0" timestamp="2024-09-10T18:08:38" hostname="DESKTOP-FIV6KMF" time="0.345">
+  <properties/>
+  <testcase name="deleteHub_HubExists_DeletesHub()" classname="com.galvanize.jwtclient.HubServiceTests" time="0.287"/>
+  <testcase name="getAllHubs_notExist_returnsEmptyList()" classname="com.galvanize.jwtclient.HubServiceTests" time="0.002"/>
+  <testcase name="deleteHub_HubNotFound_ThrowsException()" classname="com.galvanize.jwtclient.HubServiceTests" time="0.01"/>
+  <testcase name="addHub_returnsHub()" classname="com.galvanize.jwtclient.HubServiceTests" time="0.005"/>
+  <testcase name="testGetHubByName_NotFound()" classname="com.galvanize.jwtclient.HubServiceTests" time="0.009"/>
+  <testcase name="getHubSearch_withName_Name()" classname="com.galvanize.jwtclient.HubServiceTests" time="0.002"/>
+  <testcase name="updateHub_Name_updatesHubSuccessfully()" classname="com.galvanize.jwtclient.HubServiceTests" time="0.003"/>
+  <testcase name="getAllHubs_exists_returnsHubsList()" classname="com.galvanize.jwtclient.HubServiceTests" time="0.017"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
