@@ -1,0 +1,70 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: alfi-admin-deployment
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: alfi-admin-deployment
+  template:
+    metadata:
+      labels:
+        app: alfi-admin-deployment
+    spec:
+      containers:
+        - name: alfi-admin-deployment
+          image: ${IMAGE}
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+          env:
+            - name: DB_HOST
+              valueFrom:
+                secretKeyRef:
+                  name: alfie-db
+                  key: database-host
+            - name: DB_PWD
+              valueFrom:
+                secretKeyRef:
+                  name: alfie-db
+                  key: database-password
+            - name: DB_PORT
+              valueFrom:
+                secretKeyRef:
+                  name: alfie-db
+                  key: database-port
+            - name: DB_USER
+              valueFrom:
+                secretKeyRef:
+                  name: alfie-db
+                  key: database-user
+            - name: DB_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: alfie-db
+                  key: database-name
+            - name: JWT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: jwt-key-secret
+                  key: JWT_SECRET_KEY
+      imagePullSecrets:
+        - name: alif-deploy-token
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: alfi-admin-service
+  namespace: default
+spec:
+  type: LoadBalancer
+  selector:
+    app: alfi-admin-deployment
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+      name: http
