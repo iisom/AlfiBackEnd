@@ -1,0 +1,65 @@
+image: eclipse-temurin:17-alpine
+
+stages:
+  - build
+  - test
+  - docker
+  - deploy
+
+build:
+  stage: build
+  script:
+    - ./gradlew assemble
+  artifacts:
+    paths:
+      - build/libs/*.jar
+test:
+  stage: test
+  script:
+    ./gradlew test
+  artifacts:
+    paths:
+      - build/test-results/test/TEST*.xml
+
+docker:
+  stage: docker
+  needs:
+    - build
+    - test
+  image:
+    name: gcr.io/kaniko-project/executor:v1.15.0-debug
+    entrypoint: [""]
+  script:
+    - /kaniko/executor
+      --context "${CI_PROJECT_DIR}"
+      --dockerfile "${CI_PROJECT_DIR}/Dockerfile"
+      --destination "${CI_REGISTRY_IMAGE}:$CI_PIPELINE_IID"
+      --destination "${CI_REGISTRY_IMAGE}:latest"
+      --cleanup
+  cache:
+    key: "$CI_COMMIT_REF_NAME"
+    policy: pull
+    paths:
+      - build/**
+      - .gradle
+
+
+deploy:
+  stage: deploy
+  image: $BASE_AWS_EKS_IMAGE
+  when: manual # Running this job requires manual intervention
+  only:
+    refs: # We only want to deploy after we build the image
+      - main
+      - master
+  before_script:
+    - export IMAGE="$CI_REGISTRY_IMAGE":"$CI_PIPELINE_IID"
+    - aws configure set aws_access_key_id "$AWS_ACCESS_KEY_ID"
+    - aws configure set aws_secret_access_key "$AWS_SECRET_ACCESS_KEY"
+    - aws configure set region $AWS_DEFAULT_REGION
+    - aws configure set output json
+    - aws eks update-kubeconfig --name "$CLUSTER_NAME"
+    - aws sts get-caller-identity
+  script:
+#    - kubectl apply -f k8s-config/config.yaml
+    - envsubst < K8s-config/deploy.yaml | kubectl apply -f -
