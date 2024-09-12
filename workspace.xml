@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="eec8ff11-196d-4548-bcaa-a105388da8dc" name="Changes" comment="updated  hub  column" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2ktvJF8veN8BjJL1rB04qcgKQFC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.HubControllerTests.deleteHub_byId_returns202.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.HubControllerTests.deleteHub_byName_returns202.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.HubControllerTests.deleteHub_idDoesNotExist_returnsNotFound.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.HubControllerTests.deleteHub_nameDoesNotExist_returnsNotFound.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.HubControllerTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'alfi-admin-api.test'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.alfi-admin-api [:JwtClientApplication.main()].executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ingai/IdeaProjects/alfi-admin-api&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ingai\IdeaProjects\alfi-admin-api" />
+      <recent name="C:\Users\ingai\IdeaProjects\alfi-admin-api\src\main\resources" />
+      <recent name="C:\Users\ingai\IdeaProjects\alfi-admin-api\src\test\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.Tests in 'alfi-admin-api.test'">
+    <configuration name="JwtClientApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <envs>
+        <env name="DB_HOST" value="postgres.galvanizelabs.net" />
+        <env name="DB_NAME" value="alfie" />
+        <env name="DB_PORT" value="5432" />
+        <env name="DB_PWD" value="GL7DbbqcXy1Um2fd" />
+        <env name="DB_USER" value="alfie_api" />
+        <env name="JWT_SECRET" value="GYBV-XICM-QESE-PUWX-BOZK-WXVU" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.galvanize.jwtclient.JwtClientApplication" />
+      <module name="alfi-admin-api.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.galvanize.jwtclient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HubControllerTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.galvanize.jwtclient.HubControllerTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="HubControllerTests.deleteHub_byId_returns202" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.galvanize.jwtclient.HubControllerTests.deleteHub_byId_returns202&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="HubControllerTests.deleteHub_idDoesNotExist_returnsNotFound" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.galvanize.jwtclient.HubControllerTests.deleteHub_idDoesNotExist_returnsNotFound&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="HubControllerTests.deleteHub_nameDoesNotExist_returnsNotFound" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.galvanize.jwtclient.HubControllerTests.deleteHub_nameDoesNotExist_returnsNotFound&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'alfi-admin-api.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.JwtClientApplication" />
+      <item itemvalue="Gradle.HubControllerTests" />
+      <item itemvalue="Gradle.HubControllerTests.deleteHub_byId_returns202" />
+      <item itemvalue="Gradle.HubControllerTests.deleteHub_idDoesNotExist_returnsNotFound" />
+      <item itemvalue="Gradle.HubControllerTests.deleteHub_nameDoesNotExist_returnsNotFound" />
+      <item itemvalue="Gradle.Tests in 'alfi-admin-api.test'" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Tests in 'alfi-admin-api.test'" />
+        <item itemvalue="Gradle.HubControllerTests.deleteHub_idDoesNotExist_returnsNotFound" />
+        <item itemvalue="Gradle.HubControllerTests.deleteHub_nameDoesNotExist_returnsNotFound" />
+        <item itemvalue="Gradle.HubControllerTests" />
+        <item itemvalue="Gradle.HubControllerTests.deleteHub_byId_returns202" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eec8ff11-196d-4548-bcaa-a105388da8dc" name="Changes" comment="" />
+      <created>1724115614107</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1724115614107</updated>
+    </task>
+    <task id="LOCAL-00001" summary=".">
+      <option name="closed" value="true" />
+      <created>1724115949780</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724115949780</updated>
+    </task>
+    <task id="LOCAL-00002" summary=".">
+      <option name="closed" value="true" />
+      <created>1724116205022</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724116205022</updated>
+    </task>
+    <task id="LOCAL-00003" summary=".">
+      <option name="closed" value="true" />
+      <created>1724116729483</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724116729483</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added application-test.properties and updated application.properties">
+      <option name="closed" value="true" />
+      <created>1724251758116</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724251758116</updated>
+    </task>
+    <task id="LOCAL-00005" summary="updated env var">
+      <option name="closed" value="true" />
+      <created>1724256980847</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724256980847</updated>
+    </task>
+    <task id="LOCAL-00006" summary="updated dependencies">
+      <option name="closed" value="true" />
+      <created>1724257512035</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1724257512035</updated>
+    </task>
+    <task id="LOCAL-00007" summary="updated JPA Props">
+      <option name="closed" value="true" />
+      <created>1724682194570</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1724682194570</updated>
+    </task>
+    <task id="LOCAL-00008" summary="removed profile since we are going to use libraries to define relationships and pod was failing when profile was listed and jpa was listed as validate. Pod passes now">
+      <option name="closed" value="true" />
+      <created>1724685777793</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1724685777793</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added swagger for hub">
+      <option name="closed" value="true" />
+      <created>1724689370592</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1724689370592</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added cors">
+      <option name="closed" value="true" />
+      <created>1724878800790</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1724878800790</updated>
+    </task>
+    <task id="LOCAL-00011" summary="updated cors">
+      <option name="closed" value="true" />
+      <created>1724952621310</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1724952621310</updated>
+    </task>
+    <task id="LOCAL-00012" summary="updated cors2">
+      <option name="closed" value="true" />
+      <created>1724957709454</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1724957709454</updated>
+    </task>
+    <task id="LOCAL-00013" summary="updated delete in hub controller">
+      <option name="closed" value="true" />
+      <created>1724963128198</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1724963128198</updated>
+    </task>
+    <task id="LOCAL-00014" summary="updated delete in hub controller">
+      <option name="closed" value="true" />
+      <created>1724963391720</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1724963391720</updated>
+    </task>
+    <task id="LOCAL-00015" summary="removed test for deletebyname of hub">
+      <option name="closed" value="true" />
+      <created>1724966953156</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1724966953157</updated>
+    </task>
+    <task id="LOCAL-00016" summary="removed test for deletebyname of hub">
+      <option name="closed" value="true" />
+      <created>1724966986447</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1724966986448</updated>
+    </task>
+    <task id="LOCAL-00017" summary="updated delete in hub controller">
+      <option name="closed" value="true" />
+      <created>1724967042954</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1724967042954</updated>
+    </task>
+    <task id="LOCAL-00018" summary="updated  hub  column">
+      <option name="closed" value="true" />
+      <created>1724968639345</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1724968639345</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="Dockerfile" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="." />
+    <MESSAGE value="added application-test.properties and updated application.properties" />
+    <MESSAGE value="updated env var" />
+    <MESSAGE value="updated dependencies" />
+    <MESSAGE value="updated JPA Props" />
+    <MESSAGE value="removed profile since we are going to use libraries to define relationships and pod was failing when profile was listed and jpa was listed as validate. Pod passes now" />
+    <MESSAGE value="added swagger for hub" />
+    <MESSAGE value="added cors" />
+    <MESSAGE value="updated cors" />
+    <MESSAGE value="updated cors2" />
+    <MESSAGE value="removed test for deletebyname of hub" />
+    <MESSAGE value="updated delete in hub controller" />
+    <MESSAGE value="updated  hub  column" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated  hub  column" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/galvanize/jwtclient/HubService.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
